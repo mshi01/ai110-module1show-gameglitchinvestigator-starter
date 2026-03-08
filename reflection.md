@@ -29,23 +29,23 @@ The game did not work functionally the first time I ran it. The following proble
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
   - Claude
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
-  - All AI suggestions given so far were verified to be correct. For example, for the "attempts in total and attempts left not match" error, Claude identified in app.py Line 80 changed to 
+  - All AI suggestions given so far were verified to be correct. For example, for the "attempts in total and attempts left not match" error, Claude identified that in app.py Line 80 should be changed to 
     st.session_state.attempts = 0 instead of 1 and fixed this error.
-In addition, Claude suggested to change Line 77 on app.py to random.randint(low, high) to generate secrete in the range of low and high to fix the error that secret was not between low and high in the beginning. All suggestions were verified to be correct. 
+In addition, Claude suggested to change Line 77 on app.py to random.randint(low, high) to generate secrete number in the range of low and high to fix the error that secret was not between low and high in the beginning. All suggestions were verified to be correct. 
 
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
-  - So far all suggestions given by AI were correct.
+  - So far all suggestions given by AI were verified to be correct.
 ---
 
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
-  - First, I manually went through the code, where the suggested fix was and make sure it make sense. Then I rerun the app and test it manually to make sure the bug was really fixed. 
+  - First, I manually went through the code, where the suggested fix was and made sure it makes sense. Then I rerun the app and test it manually to make sure the bug was fixed. 
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
-  - I ran manually to test all fixes to all the problems I found out. I also asked Claude to write a test case in tests/test_game_logic.py to test whether the hint given was correct. 
+  - I ran manually to test all fixes to all the problems I found out. I also asked Claude to write a test case in tests/test_game_logic.py to test whether the hint given was in correct direction. 
 - Did AI help you design or understand any tests? How?
-  - Yes, I asked Claude to design a test in tests/test_game_logic.py to test whether the hint backwards error was fixed or not.
+  - Yes, I asked Claude to design a test in tests/test_game_logic.py to test whether the hint backwards error was fixed.
 
 ---
 
@@ -64,9 +64,8 @@ Only generate a new secret if one does not exist yet.
 
 ## 5. Looking ahead: your developer habits
 
-- What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
-To let AI help write testing scripts and open a new window of AI for each new problems that you want to fix in the code.
+- What is one habit or strategy from this project that you want to reuse in future labs or projects? This could be a testing habit, a prompting strategy, or a way you used Git.
+  - To let AI help write testing scripts and open a new window of AI for each new problem that you want to fix in the code.
 - What is one thing you would do differently next time you work with AI on a coding task?
   - Refer to the correct file or lines of code as reference when asking questions to AI.
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
