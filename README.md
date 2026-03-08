@@ -31,12 +31,13 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📸 Demo
 
-- [X] [Insert a screenshot of your fixed, winning game here]
+- [X] [screenshot of a winning game]
 ![success game screen](success.png)
 
 ## 🚀 Stretch Features
 
-- [ ] [If you choose to complete Challenge 4, insert a screenshot of your Enhanced Game UI here]
-Improved UI to show the progress bar on how many attempts were left and the guess history
+- [X] Improved UI
+- Added progress bar on how many attempts were left
+- Added the guess history
 ![improvedUI](improvedUI-1.png)
 ![improvedUI](improvedUI-2.png)
