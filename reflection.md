@@ -31,10 +31,10 @@ The game did not work functionally the first time I ran it. The following proble
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
   - All AI suggestions given so far were verified to be correct. For example, for the "attempts in total and attempts left not match" error, Claude identified that in app.py Line 80 should be changed to 
     st.session_state.attempts = 0 instead of 1 and fixed this error.
-In addition, Claude suggested to change Line 77 on app.py to random.randint(low, high) to generate secrete number in the range of low and high to fix the error that secret was not between low and high in the beginning. All suggestions were verified to be correct. 
+In addition, Claude suggested to change Line 77 on app.py to random.randint(low, high) to generate secrete number in the range of low and high to fix the error that secret was not between low and high in the beginning. Almost all suggestions were verified to be correct. 
 
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
-  - So far all suggestions given by AI were verified to be correct.
+  - Claude identified an issue where invalid guesses still consume an attempt. While this could be seen as a bug, I believe it may actually be a valid behavior. From a design perspective, it's reasonable to penalize invalid input by consuming an attempt, essentially treating it as a 'wasted' turn.
 ---
 
 ## 3. Debugging and testing your fixes
